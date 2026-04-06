@@ -1,161 +1,94 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Painting Gallery</title>
+<style>
+    body {
+        margin: 0;
+        font-family: 'Segoe UI', sans-serif;
+        background: linear-gradient(135deg, #1f1c2c, #928dab);
+        color: white;
+    }
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-color: #111;
-            color: white;
-        }
+    /* Artist Profile */
+    .artist {
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        padding: 40px;
+        background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+        color: #222;
+        box-shadow: 0 6px 25px rgba(0,0,0,0.4);
+    }
 
-        /* Artist Profile */
-        .artist {
-            display: flex;
-            align-items: center;
-            gap: 20px;
-            padding: 30px;
-            background: #000;
-        }
+    .artist img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid white;
+    }
 
-        .artist img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
+    .artist-info h2 {
+        margin: 0;
+        font-size: 2rem;
+    }
 
-        .artist-info h2 {
-            margin: 0;
-        }
+    .artist-info p {
+        margin: 5px 0 0;
+        color: #444;
+    }
 
-        .artist-info p {
-            margin: 5px 0 0;
-            color: #ccc;
-        }
+    /* Gallery */
+    .gallery {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 60px;
+    }
 
-        /* Gallery */
-        .gallery {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
+    .painting {
+        width: 90%;
+        max-width: 800px;
+        margin: 40px 0;
+        padding: 20px;
+        border-radius: 15px;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(8px);
+        box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
 
-        .painting {
-            width: 90%;
-            max-width: 800px;
-            margin: 40px 0;
-        }
+    .painting:hover {
+        transform: translateY(-8px) scale(1.01);
+        box-shadow: 0 12px 40px rgba(0,0,0,0.7);
+    }
 
-        .timestamp {
-            font-size: 0.9rem;
-            color: #888;
-            margin-bottom: 10px;
-        }
+    .timestamp {
+        font-size: 0.85rem;
+        color: #ffd6e0;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+    }
 
-        .painting img {
-            width: 100%;
-            border-radius: 10px;
-        }
+    .painting img {
+        width: 100%;
+        border-radius: 10px;
+        transition: transform 0.3s ease;
+    }
 
-        .description {
-            margin-top: 10px;
-        }
+    .painting img:hover {
+        transform: scale(1.03);
+    }
 
-        .description h3 {
-            margin: 5px 0;
-        }
+    .description {
+        margin-top: 15px;
+    }
 
-        .description p {
-            margin: 0;
-            color: #ccc;
-        }
-    </style>
-</head>
-<body>
+    .description h3 {
+        margin: 5px 0;
+        font-size: 1.5rem;
+        color: #ff9a9e;
+    }
 
-<!-- Artist Section -->
-<section class="artist">
-    <img src="images/artist.jpg" alt="Artist">
-    <div class="artist-info">
-        <h2>Hafsa Khurshid</h2>
-        <p>Painter | Artist</p>
-        <p>Short bio about your style, inspiration, or background.</p>
-    </div>
-</section>
-
-<!-- Gallery -->
-<section class="gallery">
-
-    <div class="painting">
-        <div class="timestamp">March 20, 2026</div>
-        <img src="calm-at-the-beach.jpg">
-        <div class="description">
-            <h3>Calm at the Beach</h3>
-            <p>A oil Painting inspired by the warm mood at the beach, as the waves level off.</p>
-        </div>
-    </div>
-
-    <div class="painting">
-        <div class="timestamp">March 18, 2026</div>
-        <img src="2.jpg" alt="Painting 2">
-        <div class="description">
-            <h3>Rural Homes</h3>
-            <p>A painting of both cosy homes to the side and open sea</p>
-        </div>
-    </div>
-
-    <div class="painting">
-        <div class="timestamp">March 15, 2026</div>
-        <img src="3.jpg" alt="Painting 3">
-        <div class="description">
-            <h3>The curling wave</h3>
-            <p>waves at sea.</p>
-        </div>
-    </div>
-
-    <div class="painting">
-        <div class="timestamp">March 10, 2026</div>
-        <img src="4.jpg" alt="Painting 4">
-        <div class="description">
-            <h3>The lighthouse</h3>
-            <p>A lighthouse on land</p>
-        </div>
-    </div>
-
-    <div class="painting">
-        <div class="timestamp">March 5, 2026</div>
-        <img src="5.jpg" alt="Painting 5">
-        <div class="description">
-            <h3>flower busht</h3>
-            <p>A A bush filled with flowers.</p>
-        </div>
-    </div>
-
-
-    <div class="painting">
-        <div class="timestamp">March 5, 2026</div>
-        <img src="6.jpg" alt="Painting 6">
-        <div class="description">
-            <h3>coffe</h3>
-            <p>A nice hot cup of coffe.</p>
-        </div>
-    </div>
-
-    <div class="painting">
-        <div class="timestamp">March 5, 2026</div>
-        <img src="7.jpg" alt="Painting 7">
-        <div class="description">
-            <h3>start night</h3>
-            <p>coment steaks across a night filled sky.</p>
-        </div>
-    </div>
-
-</section>
-
-</body>
-</html>
+    .description p {
+        margin: 0;
+        color: #e0e0e0;
+    }
+</style>
