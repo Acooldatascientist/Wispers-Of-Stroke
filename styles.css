@@ -1,94 +1,93 @@
-<style>
-    body {
-        margin: 0;
-        font-family: 'Segoe UI', sans-serif;
-        background: linear-gradient(135deg, #1f1c2c, #928dab);
-        color: white;
-    }
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: white;
+}
 
-    /* Artist Profile */
-    .artist {
-        display: flex;
-        align-items: center;
-        gap: 25px;
-        padding: 40px;
-        background: linear-gradient(90deg, #ff9a9e, #fad0c4);
-        color: #222;
-        box-shadow: 0 6px 25px rgba(0,0,0,0.4);
-    }
+/* Artist Profile */
+.artist {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 40px;
+    background: linear-gradient(90deg, #ff9a9e, #fad0c4);
+    color: #222;
+    box-shadow: 0 6px 25px rgba(0,0,0,0.4);
+}
 
-    .artist img {
-        width: 120px;
-        height: 120px;
-        border-radius: 50%;
-        object-fit: cover;
-        border: 4px solid white;
-    }
+.artist img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid white;
+}
 
-    .artist-info h2 {
-        margin: 0;
-        font-size: 2rem;
-    }
+.artist-info h2 {
+    margin: 0;
+    font-size: 2rem;
+}
 
-    .artist-info p {
-        margin: 5px 0 0;
-        color: #444;
-    }
+.artist-info p {
+    margin: 5px 0 0;
+    color: #444;
+}
 
-    /* Gallery */
-    .gallery {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-bottom: 60px;
-    }
+/* Gallery */
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 60px;
+}
 
-    .painting {
-        width: 90%;
-        max-width: 800px;
-        margin: 40px 0;
-        padding: 20px;
-        border-radius: 15px;
-        background: rgba(255, 255, 255, 0.08);
-        backdrop-filter: blur(8px);
-        box-shadow: 0 8px 30px rgba(0,0,0,0.5);
-        transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+.painting {
+    width: 90%;
+    max-width: 800px;
+    margin: 40px 0;
+    padding: 20px;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-    .painting:hover {
-        transform: translateY(-8px) scale(1.01);
-        box-shadow: 0 12px 40px rgba(0,0,0,0.7);
-    }
+.painting:hover {
+    transform: translateY(-8px) scale(1.01);
+    box-shadow: 0 12px 40px rgba(0,0,0,0.7);
+}
 
-    .timestamp {
-        font-size: 0.85rem;
-        color: #ffd6e0;
-        margin-bottom: 10px;
-        letter-spacing: 1px;
-    }
+.timestamp {
+    font-size: 0.85rem;
+    color: #ffd6e0;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
 
-    .painting img {
-        width: 100%;
-        border-radius: 10px;
-        transition: transform 0.3s ease;
-    }
+.painting img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    transform: scale(0.85);
+}
 
-    .painting img:hover {
-        transform: scale(1.03);
-    }
+.painting img:hover {
+    transform: scale(1.05);
+}
 
-    .description {
-        margin-top: 15px;
-    }
+.description {
+    margin-top: 15px;
+}
 
-    .description h3 {
-        margin: 5px 0;
-        font-size: 1.5rem;
-        color: #ff9a9e;
-    }
+.description h3 {
+    margin: 5px 0;
+    font-size: 1.5rem;
+    color: #ff9a9e;
+}
 
-    .description p {
-        margin: 0;
-        color: #e0e0e0;
-    }
-</style>
+.description p {
+    margin: 0;
+    color: #e0e0e0;
+}
